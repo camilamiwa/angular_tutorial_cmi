@@ -1,8 +1,11 @@
-# Tutorial by Loiane Groner. Angular 2
+# Notes to me
 
 Also practicing Git.
 
 For more information about module files, go to src/app/notes_module.txt
+
+On file (...).component.ts: inside @component decorator, selector value defines the tag value when adding it into a html file.
+You must also add this component into the add.module.ts file.
 
 # PrimeiroProjeto
 
