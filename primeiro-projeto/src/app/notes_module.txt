@@ -1,0 +1,57 @@
+# Class name
+
+export class <ClassName>.
+
+ClassName in KamelCase, following file name, for example: app.module.ts -> class: AppModule.
+
+# Decorator
+
+`import { NgModule } from '@angular/core';`
+
+`@NgModule`
+
+# Metadata
+
+## Declarations: list of components, "diretivas", and pipes used on this module.
+
+## imports: other modules to be imported by this module, or its components.
+
+## providers: lists of services that will be available for all services, such as Auth, Routes, etc.
+
+## bootstrap: only on the 'root module', it defines which component must be initialized.
+
+## exports: components that will be exported. Some components might be kept as private.
+
+# Generating a new module
+
+`ng g m courses`
+
+This will create a module inside app folder, this is a functional module.
+
+The functional module imports CommonModule instead of BrowserModule
+
+# Generating a component inside a functional module
+
+`ng g c courses`
+
+This will create all files related to courses module, and will import inside _app.module_.
+
+But we want to manage all courses related files inside _courses.module_. This is needed to be done manually.
+
+ps. I've tried to run `ng g c courses/courses`, but it created a courses folder inside the pre-existing courses folder. It did not work.
+
+# Generating another component inside courses folder
+
+`ng g c courses/course-details`
+
+This command will import this component inside courses.module, since it belongs to courses folder.
+
+This component will not be exported, therefor it will not be available to be used inside app.html file.
+
+Once this component belongs to the Courses module, this does not need to be imported into app module.
+
+# Notes to myself
+
+When importing from the same folder, import from './<file_name>'.
+
+

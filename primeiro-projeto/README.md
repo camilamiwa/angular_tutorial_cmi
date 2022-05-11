@@ -2,6 +2,8 @@
 
 Also practicing Git.
 
+For more information about module files, go to src/app/notes_module.txt
+
 # PrimeiroProjeto
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.5.
